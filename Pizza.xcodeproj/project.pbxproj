@@ -9,21 +9,34 @@
 /* Begin PBXBuildFile section */
 		33B737A229B358D400AE5A9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737A129B358D400AE5A9D /* AppDelegate.swift */; };
 		33B737A429B358D400AE5A9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737A329B358D400AE5A9D /* SceneDelegate.swift */; };
-		33B737A629B358D400AE5A9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737A529B358D400AE5A9D /* ViewController.swift */; };
 		33B737A929B358D400AE5A9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B737A729B358D400AE5A9D /* Main.storyboard */; };
 		33B737AB29B358D500AE5A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33B737AA29B358D500AE5A9D /* Assets.xcassets */; };
 		33B737AE29B358D500AE5A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33B737AC29B358D500AE5A9D /* LaunchScreen.storyboard */; };
+		33B737B729B3718C00AE5A9D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 33B737B629B3718C00AE5A9D /* Kingfisher */; };
+		33B737B929B373DE00AE5A9D /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737B829B373DE00AE5A9D /* AppConfig.swift */; };
+		33B737BB29B373EA00AE5A9D /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737BA29B373EA00AE5A9D /* PizzaModel.swift */; };
+		33B737BD29B373F700AE5A9D /* ConfigFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737BC29B373F700AE5A9D /* ConfigFetcher.swift */; };
+		33B737BF29B3741100AE5A9D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737BE29B3741100AE5A9D /* ListViewController.swift */; };
+		33B737C129B3742D00AE5A9D /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737C029B3742D00AE5A9D /* OrderViewController.swift */; };
+		33B737C329B3744C00AE5A9D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737C229B3744C00AE5A9D /* HomeViewController.swift */; };
+		33B737C529B3745D00AE5A9D /* PizzaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B737C429B3745D00AE5A9D /* PizzaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33B7379E29B358D400AE5A9D /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33B737A129B358D400AE5A9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33B737A329B358D400AE5A9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		33B737A529B358D400AE5A9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		33B737A829B358D400AE5A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33B737AA29B358D500AE5A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33B737AD29B358D500AE5A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33B737AF29B358D500AE5A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33B737B829B373DE00AE5A9D /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		33B737BA29B373EA00AE5A9D /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		33B737BC29B373F700AE5A9D /* ConfigFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFetcher.swift; sourceTree = "<group>"; };
+		33B737BE29B3741100AE5A9D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		33B737C029B3742D00AE5A9D /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		33B737C229B3744C00AE5A9D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		33B737C429B3745D00AE5A9D /* PizzaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B737B729B3718C00AE5A9D /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +72,13 @@
 			children = (
 				33B737A129B358D400AE5A9D /* AppDelegate.swift */,
 				33B737A329B358D400AE5A9D /* SceneDelegate.swift */,
-				33B737A529B358D400AE5A9D /* ViewController.swift */,
+				33B737C429B3745D00AE5A9D /* PizzaCollectionViewCell.swift */,
+				33B737C229B3744C00AE5A9D /* HomeViewController.swift */,
+				33B737C029B3742D00AE5A9D /* OrderViewController.swift */,
+				33B737BE29B3741100AE5A9D /* ListViewController.swift */,
+				33B737BC29B373F700AE5A9D /* ConfigFetcher.swift */,
+				33B737BA29B373EA00AE5A9D /* PizzaModel.swift */,
+				33B737B829B373DE00AE5A9D /* AppConfig.swift */,
 				33B737A729B358D400AE5A9D /* Main.storyboard */,
 				33B737AA29B358D500AE5A9D /* Assets.xcassets */,
 				33B737AC29B358D500AE5A9D /* LaunchScreen.storyboard */,
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = Pizza;
+			packageProductDependencies = (
+				33B737B629B3718C00AE5A9D /* Kingfisher */,
+			);
 			productName = Pizza;
 			productReference = 33B7379E29B358D400AE5A9D /* Pizza.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 33B7379529B358D400AE5A9D;
+			packageReferences = (
+				33B737B529B3718C00AE5A9D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 33B7379F29B358D400AE5A9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33B737A629B358D400AE5A9D /* ViewController.swift in Sources */,
+				33B737B929B373DE00AE5A9D /* AppConfig.swift in Sources */,
+				33B737BB29B373EA00AE5A9D /* PizzaModel.swift in Sources */,
+				33B737BD29B373F700AE5A9D /* ConfigFetcher.swift in Sources */,
 				33B737A229B358D400AE5A9D /* AppDelegate.swift in Sources */,
+				33B737C329B3744C00AE5A9D /* HomeViewController.swift in Sources */,
 				33B737A429B358D400AE5A9D /* SceneDelegate.swift in Sources */,
+				33B737BF29B3741100AE5A9D /* ListViewController.swift in Sources */,
+				33B737C129B3742D00AE5A9D /* OrderViewController.swift in Sources */,
+				33B737C529B3745D00AE5A9D /* PizzaCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33B737B529B3718C00AE5A9D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33B737B629B3718C00AE5A9D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33B737B529B3718C00AE5A9D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33B7379629B358D400AE5A9D /* Project object */;
 }
