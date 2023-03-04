@@ -1,0 +1,25 @@
+{
+    "pizzaList":
+    [
+        {
+            "name": "Chiz bomba",
+            "imageLink": "",
+            "description": ""
+        },
+        {
+            "name": "Pepperoni",
+            "imageLink": "",
+            "description": ""
+        },
+        {
+            "name": "Margaritta",
+            "imageLink": "",
+            "description": ""
+        },
+        {
+            "name": "4 cheez",
+            "imageLink": "",
+            "description": ""
+        }
+    ]
+}
