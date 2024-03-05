@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct PizzaModel: Codable {
+struct ProductModel: Codable {
     let name: String
-    let description: String
-    let imageLink: String
+    let `description`: String?
+    let imageLink: String?
 }

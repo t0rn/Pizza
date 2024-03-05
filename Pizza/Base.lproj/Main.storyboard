@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XF1-kA-xrZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XF1-kA-xrZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Order-->
         <scene sceneID="cCA-Md-9MC">
             <objects>
                 <viewController id="5Bj-oi-1l9" customClass="OrderViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,22 +20,22 @@
                         <viewLayoutGuide key="safeArea" id="Au7-5N-reS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="zjL-6E-R4f"/>
+                    <tabBarItem key="tabBarItem" title="Order" id="zjL-6E-R4f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6d-z1-LxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="804" y="186"/>
         </scene>
-        <!--Item 1-->
+        <!--Products-->
         <scene sceneID="OC3-mn-eJt">
             <objects>
-                <viewController id="RBK-M5-V3k" customClass="ListViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RBK-M5-V3k" customClass="ProductListViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bAn-Fa-aWX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NsQ-5D-QxW">
-                                <rect key="frame" x="16" y="59" width="361" height="710"/>
+                                <rect key="frame" x="16" y="103" width="361" height="666"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jCM-Er-gWc">
                                     <size key="itemSize" width="361" height="321"/>
@@ -103,14 +104,15 @@
                             <constraint firstItem="NsQ-5D-QxW" firstAttribute="bottom" secondItem="qLw-9Q-QDc" secondAttribute="bottom" id="VSN-IR-xva"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="cvx-b2-mg1"/>
+                    <tabBarItem key="tabBarItem" title="Products" id="cvx-b2-mg1"/>
+                    <navigationItem key="navigationItem" id="dcr-yQ-45b"/>
                     <connections>
                         <outlet property="collectionView" destination="NsQ-5D-QxW" id="qFR-Yp-bAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1C6-O9-6ET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803.81679389312978" y="-486.61971830985919"/>
+            <point key="canvasLocation" x="2657.2519083969464" y="-508.45070422535213"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="X2A-fc-f07">
@@ -122,7 +124,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RBK-M5-V3k" kind="relationship" relationship="viewControllers" id="hb6-TW-gW8"/>
+                        <segue destination="Fu8-OG-D8p" kind="relationship" relationship="viewControllers" id="9vb-oU-BgC"/>
                         <segue destination="5Bj-oi-1l9" kind="relationship" relationship="viewControllers" id="3Ne-qI-7Du"/>
                     </connections>
                 </tabBarController>
@@ -130,13 +132,51 @@
             </objects>
             <point key="canvasLocation" x="-102" y="-182"/>
         </scene>
+        <!--Category List View Controller-->
+        <scene sceneID="zjb-8i-MkQ">
+            <objects>
+                <viewController id="1Yr-pu-Dqe" customClass="CategoryListViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TFg-PF-GFm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="at0-K0-bsY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pno-13-VE3"/>
+                    <connections>
+                        <segue destination="RBK-M5-V3k" kind="show" identifier="toProductList" id="44R-Nr-mzL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwx-3q-IIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730.534351145038" y="-508.45070422535213"/>
+        </scene>
+        <!--Categories-->
+        <scene sceneID="Zrc-QX-SUG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fu8-OG-D8p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Categories" id="GO9-Ta-RER"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ctP-tR-orm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Yr-pu-Dqe" kind="relationship" relationship="rootViewController" id="Cka-kd-FHv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2NO-3w-aMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803.81679389312978" y="-508.45070422535213"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
